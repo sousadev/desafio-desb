@@ -8,7 +8,7 @@ const RepoCard = ({ repo, username }: { repo: Repo, username: any }) => {
     return (
         <>
             {repo && username && (
-                <Link to={`/repo/${username ? username : window.location.pathname.split("/")[2]}/${repo.name}`} className="repo-card text-link-none">
+                <Link to={`/repo/${repo.full_name}`} className="repo-card text-link-none">
                     <div className="repo-top">
                         <h4>{repo.name}</h4>
                         <div className="repo-stars">
