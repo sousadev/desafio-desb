@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 🚀 Desafio Desbravador - Explorador do GitHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Desafio Desbravador**, uma aplicação web responsiva e elegante desenvolvida em React para buscar usuários do GitHub e explorar os dados de seus respectivos repositórios.
 
-## Available Scripts
+Esta aplicação foi construída com foco em design moderno (UI Premium), forte tipagem no front-end utilizando TypeScript e roteamento dinâmico.
 
-In the project directory, you can run:
+## ✨ Funcionalidades
 
-### `npm start`
+- **Busca de Usuários**: Pesquise dinamicamente entre todo o ecossistema do Github.
+- **Perfil do Usuário**: Exibição aprimorada englobando estatísticas, avatar, biografia, seguidores e quantidade de repositórios.
+- **Catálogo de Repositórios**: Listagem limpa no formato "Grid" destacando tecnologias, total de forks/estreladas e atalhos diretos.
+- **Detalhes Profundos**: Acesso ao histórico aprofundado dos repositórios via endpoints isolados da API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **ReactJS** (v19)
+- **TypeScript**
+- **React Router Dom** (Navegação estruturada entre as páginas de Home -> Perfil -> Repositório)
+- **Axios** (Para o consumo nativo da API Rest Pública do GitHub)
+- **React Icons** (Componentização de ícones padronizados em Material Design)
+- **CSS3 Vanilla** (Arquitetura de estilos com layout Flex/Grid e Glassmorphism)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Como rodar a aplicação localmente
 
-### `npm run build`
+### 1. Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para rodar este projeto com sucesso em sua máquina, certifique-se de ter instalado:
+- **Node.js** (Versão recomentada LTS - 18.x ou superior)
+- Um gerenciador de dependências (**Yarn** preferencialmente, ou **npm**)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Passo a passo para execução
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone este projeto para a sua máquina ou abra o diretório raiz (`/desafio-desbravador`) no seu terminal.
 
-### `npm run eject`
+1. **Instale as dependências** do projeto:
+   ```bash
+   yarn install
+   # ou se preferir utilizar o NPM
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Inicialize o servidor de desenvolvimento**:
+   ```bash
+   yarn start
+   # ou usando NPM
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Acesse o navegador**!  
+   Assim que a compilação finalizar, a sua aplicação abrirá automaticamente ou estará disponível no endereço:
+   👉 **http://localhost:3000**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Build para Produção (Deploy)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para gerar uma versão estática otimizada da aplicação de forma a ser hospedada (Vercel, Netlify, etc), rode o comando abaixo:
+```bash
+yarn build
+```
 
-## Learn More
+Isso empacotará corretamente todas os módulos React e preparará a pasta `/build` para implantação, diminuindo drasticamente o peso final do bundle.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> _Projeto estruturado como etapa de desafio/avaliação. Sinta-se à vontade para explorar os componentes em `src/components` e os hooks globais em `src/hooks`._
