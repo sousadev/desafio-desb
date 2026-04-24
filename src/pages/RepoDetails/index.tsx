@@ -28,7 +28,7 @@ const RepoDetails = () => {
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await api.get(`/repos/${username}/${reponame}`);
+        const response = await api.get(`/repos/${window.location.pathname.split("/")[2]}/${window.location.pathname.split("/")[3]}`);
         setRepo(response.data);
       } catch (err) {
         console.error("Erro ao buscar dados do repositório", err);
@@ -38,7 +38,6 @@ const RepoDetails = () => {
     }
     loadData();
   }, [username, reponame]);
-  console.log("var repo", username, reponame);
 
   if (loading) return (
     <>
