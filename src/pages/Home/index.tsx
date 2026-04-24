@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import "./styles.css";
 import { MdSearch } from 'react-icons/md';
-import { useGithub } from '../../hooks/github';
-
 const Home = () => {
-  const { user, repos, loading, error, searchUser } = useGithub();
   const [username, setUsername] = useState('');
 
   const handleSearch = async () => {

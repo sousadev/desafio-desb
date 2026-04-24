@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api from '../../services/api';
 import Navbar from '../../components/Navbar/Navbar';
-import { MdPeople, MdEmail, MdStar, MdArrowBack, MdBook, MdSort } from 'react-icons/md';
+import { MdPeople, MdEmail, MdArrowBack, MdBook, MdSort } from 'react-icons/md';
 import "./styles.css";
 import RepoCard from '../../components/RepoCard';
 import type { Repo } from '../../types/repo.types';
