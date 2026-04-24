@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api from '../../services/api';
-import Navbar from '../../components/Navbar/Navbar';
-import { MdStar, MdArrowBack, MdCode, MdLink, MdPeople, MdCalendarToday } from 'react-icons/md';
+import { MdArrowBack, MdCode, MdLink, MdPeople, MdCalendarToday, MdStar } from 'react-icons/md';
 import "./styles.css";
 
 interface Repo {

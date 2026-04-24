@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 import "./styles.css";
 import { MdSearch } from 'react-icons/md';
 import { useGithub } from '../../hooks/github';

@@ -1,5 +1,4 @@
 import "./navbar.css";
-import { MdOutlineMenu } from "react-icons/md";
 import Logo from "../../assets/logo-github.png";
 
 const Navbar = () => {
