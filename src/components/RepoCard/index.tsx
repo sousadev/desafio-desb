@@ -3,7 +3,7 @@ import { MdStar } from "react-icons/md";
 
 import type { Repo } from "../../types/repo.types";
 
-const RepoCard = ({ repo, username }: { repo: Repo, username?: string | undefined }) => {
+const RepoCard = ({ repo, username }: { repo: Repo, username = window.location.pathname.split("/")[2] }) => {
 
     return (
         <>
