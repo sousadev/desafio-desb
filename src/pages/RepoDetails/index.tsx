@@ -81,7 +81,7 @@ const RepoDetails = () => {
 
       <div className="profile-container">
         <div className="back-action">
-          <Link to={`/user/${username}`} className="back-link">
+          <Link to={`/user/${window.location.pathname.split("/")[2]}`} className="back-link">
             <MdArrowBack size={24} />
             <span>Voltar para perfil</span>
           </Link>
